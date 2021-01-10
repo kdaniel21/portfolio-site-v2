@@ -1,6 +1,6 @@
 <template>
   <div id="techs">
-    <div class="tech" v-for="tech in techs" :key="tech.name">
+    <div v-for="tech in techs" :key="tech.name" class="tech">
       <img
         :src="tech.img"
         :alt="`${tech.name} logo`"
@@ -13,8 +13,10 @@
 
 <script>
 export default {
-  props: ['techs']
-};
+  props: {
+    techs: { type: Array, default: () => [] },
+  },
+}
 </script>
 
 <style scoped>
