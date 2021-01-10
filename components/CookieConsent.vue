@@ -1,5 +1,5 @@
 <template>
-  <div v-if="show" id="cookie-consent">
+  <div v-show="show" id="cookie-consent">
     <p>
       Hey! I just wanted to say that the site uses some cookies. But no reason
       to panic, because we all love 🍪, right?
@@ -12,7 +12,7 @@
 export default {
   name: 'CookieConsent',
   data() {
-    return { show: true }
+    return { show: false }
   },
   created() {
     if (process.client)
