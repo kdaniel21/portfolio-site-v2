@@ -29,8 +29,12 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
+  modules: ['@nuxtjs/google-gtag'],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  'google-gtag': {
+    id: 'UA-159367806-1',
+  },
 }
