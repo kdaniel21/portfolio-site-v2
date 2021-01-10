@@ -11,9 +11,9 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
+    "@nuxtjs/google-gtag": "^1.0.4",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
-    "vue-gtag": "^1.10.0",
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {
