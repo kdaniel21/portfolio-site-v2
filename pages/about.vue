@@ -1,9 +1,7 @@
 <template>
   <div id="about">
     <!-- INTRODUCTION SECTION -->
-    <h1>
-      About me
-    </h1>
+    <h1>About me</h1>
     <p>
       Hi! My name is Daniel Kiss, an aspiring
       <span class="blue">full-stack web developer</span> with a special interest
@@ -27,84 +25,75 @@
       new technologies and participate in challenging projects.
     </p>
     <div class="action">
-      <router-link to="projects">
-        <div class="btn projects-btn">
-          Take a look at my projects
-        </div>
-      </router-link>
-      <router-link to="contact">
-        <div class="btn">
-          Contact Me
-        </div>
-      </router-link>
+      <nuxt-link to="projects">
+        <div class="btn projects-btn">Take a look at my projects</div>
+      </nuxt-link>
+      <nuxt-link to="contact">
+        <div class="btn">Contact Me</div>
+      </nuxt-link>
     </div>
   </div>
 </template>
 <script>
-import Techs from '../components/Techs';
-
 export default {
   name: 'About',
-  components: {
-    Techs
-  },
   data() {
     return {
       techs: [
         {
           name: 'JavaScript',
           img:
-            'https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/javascript_oo047w.svg'
+            'https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/javascript_oo047w.svg',
         },
         {
           name: 'Angular',
           img:
-            'https://res.cloudinary.com/kdaniel/image/upload/v1596170008/portfolio-site/tech-icons/angular_ut7ry9.svg'
+            'https://res.cloudinary.com/kdaniel/image/upload/v1596170008/portfolio-site/tech-icons/angular_ut7ry9.svg',
         },
         {
           name: 'Vue',
           img:
-            'https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/vue_ovr6z9.svg'
+            'https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/vue_ovr6z9.svg',
         },
         {
           name: 'Java',
           img:
-            'https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/java_azbwoq.svg'
+            'https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/java_azbwoq.svg',
         },
         {
           name: 'Node.js',
           img:
-            'https://res.cloudinary.com/kdaniel/image/upload/v1596170002/portfolio-site/tech-icons/nodejs_dolm0a.svg'
+            'https://res.cloudinary.com/kdaniel/image/upload/v1596170002/portfolio-site/tech-icons/nodejs_dolm0a.svg',
         },
         {
           name: 'Express',
           img:
-            'https://res.cloudinary.com/kdaniel/image/upload/v1596170006/portfolio-site/tech-icons/expressjs_nb3e9d.svg'
+            'https://res.cloudinary.com/kdaniel/image/upload/v1596170006/portfolio-site/tech-icons/expressjs_nb3e9d.svg',
         },
         {
           name: 'Git',
           img:
-            'https://res.cloudinary.com/kdaniel/image/upload/v1596170005/portfolio-site/tech-icons/git_i4eslw.svg'
+            'https://res.cloudinary.com/kdaniel/image/upload/v1596170005/portfolio-site/tech-icons/git_i4eslw.svg',
         },
         {
           name: 'Firebase',
           img:
-            'https://res.cloudinary.com/kdaniel/image/upload/v1596170006/portfolio-site/tech-icons/firebase_hw3khm.svg'
+            'https://res.cloudinary.com/kdaniel/image/upload/v1596170006/portfolio-site/tech-icons/firebase_hw3khm.svg',
         },
         {
           name: 'MongoDB',
           img:
-            'https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/mongodb_jm7jrz.svg'
+            'https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/mongodb_jm7jrz.svg',
         },
         {
           name: 'CSS',
           img:
-            'https://res.cloudinary.com/kdaniel/image/upload/v1596170007/portfolio-site/tech-icons/css_gw5jlc.svg'
-        }
-      ]
-    };
-  }
-};
+            'https://res.cloudinary.com/kdaniel/image/upload/v1596170007/portfolio-site/tech-icons/css_gw5jlc.svg',
+        },
+      ],
+    }
+  },
+}
 </script>
 <style scoped>
 #about {

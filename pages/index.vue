@@ -1,39 +1,14 @@
 <template>
   <div id="main">
     <div class="name">
-      <vue-typer
-        class="firstname"
-        :text="['Daniel']"
-        :repeat="0"
-        initial-action="typing"
-        :pre-type-delay="100"
-        :type-delay="200"
-        :pre-erase-delay="0"
-        :erase-delay="0"
-        erase-style="select-all"
-        :erase-on-complete="false"
-        caret-animation="blink"
-      ></vue-typer>
-      <vue-typer
-        class="lastname"
-        :text="['Kiss']"
-        :repeat="0"
-        initial-action="typing"
-        :pre-type-delay="1300"
-        :type-delay="200"
-        :pre-erase-delay="0"
-        :erase-delay="0"
-        erase-style="select-all"
-        :erase-on-complete="false"
-        caret-animation="blink"
-      ></vue-typer>
-      <div class="bottom-text">
+      <client-only>
         <vue-typer
-          :text="['Full Stack ']"
+          class="firstname"
+          :text="['Daniel']"
           :repeat="0"
           initial-action="typing"
-          :pre-type-delay="2100"
-          :type-delay="100"
+          :pre-type-delay="100"
+          :type-delay="200"
           :pre-erase-delay="0"
           :erase-delay="0"
           erase-style="select-all"
@@ -41,26 +16,51 @@
           caret-animation="blink"
         ></vue-typer>
         <vue-typer
-          class="title"
-          :text="['Web Developer']"
+          class="lastname"
+          :text="['Kiss']"
           :repeat="0"
           initial-action="typing"
-          :pre-type-delay="3100"
-          :type-delay="100"
+          :pre-type-delay="1300"
+          :type-delay="200"
           :pre-erase-delay="0"
           :erase-delay="0"
           erase-style="select-all"
           :erase-on-complete="false"
           caret-animation="blink"
-        ></vue-typer>
-      </div>
+        />
+        <div class="bottom-text">
+          <vue-typer
+            :text="['Full Stack ']"
+            :repeat="0"
+            initial-action="typing"
+            :pre-type-delay="2100"
+            :type-delay="100"
+            :pre-erase-delay="0"
+            :erase-delay="0"
+            erase-style="select-all"
+            :erase-on-complete="false"
+            caret-animation="blink"
+          />
+          <vue-typer
+            class="title"
+            :text="['Web Developer']"
+            :repeat="0"
+            initial-action="typing"
+            :pre-type-delay="3100"
+            :type-delay="100"
+            :pre-erase-delay="0"
+            :erase-delay="0"
+            erase-style="select-all"
+            :erase-on-complete="false"
+            caret-animation="blink"
+          />
+        </div>
+      </client-only>
     </div>
     <div class="button-container">
-      <router-link to="about">
-        <div class="btn">
-          Get To Know Me
-        </div>
-      </router-link>
+      <nuxt-link to="about">
+        <div class="btn">Get To Know Me</div>
+      </nuxt-link>
     </div>
     <div class="icons">
       <a href="https://github.com/kdaniel21" target="_blank"
@@ -83,14 +83,9 @@
 </template>
 
 <script>
-import { VueTyper } from 'vue-typer';
-
 export default {
   name: 'Main',
-  components: {
-    VueTyper
-  }
-};
+}
 </script>
 <style scoped>
 #main {

@@ -14,7 +14,7 @@
       appear-class="show-message"
       appear-active-class="show-message-active"
     >
-      <div class="contact-form" v-if="showSuccess || showError">
+      <div v-if="showSuccess || showError" class="contact-form">
         <p v-if="showSuccess">
           Your message was <span class="blue">successfully</span> sent!
         </p>
@@ -26,7 +26,7 @@
           Hey! Unfortunately something went wrong... Could you please try again
           via <span class="blue">email</span>?
         </p>
-        <a href="mailto:kissd621@gmail.com" v-if="showError">
+        <a v-if="showError" href="mailto:kissd621@gmail.com">
           <img
             src="https://res.cloudinary.com/kdaniel/image/upload/v1596171231/portfolio-site/other-icons/mail_vx7ebc.svg"
             title="Send me an email!"
@@ -39,17 +39,17 @@
     </transition>
     <!-- CONTACT FORM -->
     <form
+      v-if="!showError && !showSuccess"
       class="contact-form"
       @submit.prevent="sendContact"
-      v-if="!showError && !showSuccess"
     >
       <div class="form-group">
         <div class="label">Your Name</div>
-        <input type="text" v-model="name" required />
+        <input v-model="name" type="text" required />
       </div>
       <div class="form-group">
         <div class="label">Your Email</div>
-        <input type="email" v-model="email" required />
+        <input v-model="email" type="email" required />
       </div>
       <div class="form-group">
         <div class="label">Your Message</div>
@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 
 export default {
   name: 'Contact',
@@ -73,33 +73,33 @@ export default {
       email: '',
       message: '',
       showSuccess: false,
-      showError: false
-    };
+      showError: false,
+    }
   },
   methods: {
-    sendContact() {
-      if (!this.name || !this.email || !this.message) return;
+    async sendContact() {
+      if (!this.name || !this.email || !this.message) return
 
-      this.$Progress.start();
+      const formData = new FormData()
+      formData.set('form-name', 'contact-form')
+      formData.set('name', this.name)
+      formData.set('email', this.email)
+      formData.set('message', this.message)
 
-      axios
-        .post(`${process.env.VUE_APP_API_URL}/contacts`, {
-          name: this.name,
-          email: this.email,
-          message: this.message
+      try {
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: formData,
         })
-        .then(() => {
-          this.$Progress.finish();
 
-          this.showSuccess = true;
-        })
-        .catch(() => {
-          this.$Progress.fail();
-          this.showError = true;
-        });
-    }
-  }
-};
+        this.showSuccess = true
+      } catch {
+        this.showError = true
+      }
+    },
+  },
+}
 </script>
 <style scoped>
 #contact {

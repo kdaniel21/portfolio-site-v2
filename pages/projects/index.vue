@@ -3,9 +3,9 @@
     <h1>Projects</h1>
     <transition-group name="cards" class="projects-container" tag="div">
       <div
-        class="project-wrapper"
         v-for="project in projects"
         :key="project.name"
+        class="project-wrapper"
       >
         <div class="project-card">
           <img
@@ -35,11 +35,9 @@
                 />
               </a>
             </div>
-            <router-link :to="`projects/${project.slug}`">
-              <div class="btn-outline">
-                Details
-              </div>
-            </router-link>
+            <nuxt-link :to="`projects/${project.slug}`">
+              <div class="btn-outline">Details</div>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -47,26 +45,14 @@
   </div>
 </template>
 <script>
-import axios from 'axios';
-
 export default {
   name: 'Projects',
-  data() {
-    return {
-      projects: []
-    };
+  async asyncData({ $content }) {
+    const projects = await $content('projects').fetch()
+
+    return { projects }
   },
-  mounted() {
-    this.$Progress.start();
-    axios
-      .get(`${process.env.VUE_APP_API_URL}/projects`)
-      .then(res => {
-        this.projects = res.data.projects;
-        this.$Progress.finish();
-      })
-      .catch(() => this.$Progress.fail());
-  }
-};
+}
 </script>
 <style scoped>
 #projects {

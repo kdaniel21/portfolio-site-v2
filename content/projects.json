@@ -1,0 +1,159 @@
+[
+  {
+    "name": "Reservation System (Firebase)",
+    "summary": "Front-End: Angular\nBack-End: Firebase",
+    "description": "The first version of the Reservation System. It was built on top of Google Firebase, using the AngularFire library and the Realtime DB REST API. User groups (admins and normal users), admin dashboard, blog posts, contact form with on-site message sending functionality and the reservation system handling recurring and normal reservations and multiple places are included.\nCredentials for the demo: admin@test.com (admin account) or test@test.com (normal user) both having the password \"test1234\".",
+    "technologies": [
+      {
+        "name": "Angular",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170008/portfolio-site/tech-icons/angular_ut7ry9.svg"
+      },
+      {
+        "name": "Angular Material",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170007/portfolio-site/tech-icons/angular-material_duz2az.svg"
+      },
+      {
+        "name": "TypeScript",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/typescript_japrq8.svg"
+      },
+      {
+        "name": "Firebase Functions",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170005/portfolio-site/tech-icons/firebase-functions_jbctqr.svg"
+      },
+      {
+        "name": "Firebase Realtime DB",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170004/portfolio-site/tech-icons/firebase-realtime-db_yv6uka.svg"
+      },
+      {
+        "name": "Firestore",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170004/portfolio-site/tech-icons/firestore_xg5ics.svg"
+      },
+      {
+        "name": "Firebase Authentication",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170006/portfolio-site/tech-icons/firebase-auth_w0hzkw.svg"
+      }
+    ],
+    "created": "2020.03 - 2020.05",
+    "slug": "reservation-system-firebase",
+    "repoUrl": "https://github.com/kdaniel21/reservation-system-firebase",
+    "demoUrl": "https://reservation-system-81981.web.app",
+    "coverImg": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/reservation-system-firebase_hxpcg5.png",
+    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/reservation-system-firebase_hxpcg5.png"
+  },
+  {
+    "name": "Portfolio Site",
+    "summary": "Front-End: Vue\nBack-End: Node.js & Express & MongoDB",
+    "description": "My portfolio page using Vue.js and CSS on the front-end and a very simple Express.js & Node.js back-end to serve some content from MongoDB and to operate the contact form.",
+    "technologies": [
+      {
+        "name": "JavaScript",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/javascript_oo047w.svg"
+      },
+      {
+        "name": "Vue",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/vue_ovr6z9.svg"
+      },
+      {
+        "name": "CSS",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170007/portfolio-site/tech-icons/css_gw5jlc.svg"
+      },
+      {
+        "name": "Node.js",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170002/portfolio-site/tech-icons/nodejs_dolm0a.svg"
+      },
+      {
+        "name": "Express.js",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170006/portfolio-site/tech-icons/expressjs_nb3e9d.svg"
+      },
+      {
+        "name": "MongoDB",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/mongodb_jm7jrz.svg"
+      }
+    ],
+    "created": "2020.07",
+    "slug": "portfolio-site",
+    "repoUrl": "https://github.com/kdaniel21/portfolio-site-v1",
+    "demoUrl": "https://danielkiss.me",
+    "coverImg": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/portfolio-site_ypnb1f.png",
+    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/portfolio-site_ypnb1f.png"
+  },
+  {
+    "createdAt": "2020-07-27T08:26:43.806Z",
+    "name": "Reservation System",
+    "summary": "Front-End: Angular\nBack-End: Node.js & Express & MongoDB",
+    "description": "The second version of my Reservation System project. Unlike the first version, it uses an own Node.js & Express & MongoDB backend with the same functionality (admin panel, posts, contact form and messaging, normal and recurring reservations). The frontend was totally refactored to suit the needs of the new API even though the design remained the same.",
+    "technologies": [
+      {
+        "name": "TypeScript",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/typescript_japrq8.svg"
+      },
+      {
+        "name": "Angular",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170008/portfolio-site/tech-icons/angular_ut7ry9.svg"
+      },
+      {
+        "name": "Angular Material",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170007/portfolio-site/tech-icons/angular-material_duz2az.svg"
+      },
+      {
+        "name": "Node.js",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170002/portfolio-site/tech-icons/nodejs_dolm0a.svg"
+      },
+      {
+        "name": "Express.js",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170006/portfolio-site/tech-icons/expressjs_nb3e9d.svg"
+      },
+      {
+        "name": "MongoDB",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/mongodb_jm7jrz.svg"
+      }
+    ],
+    "created": "2020.07",
+    "slug": "reservation-system",
+    "repoUrl": "https://github.com/kdaniel21/reservation-system",
+    "demoUrl": "https://reservation-system.netlify.app/",
+    "coverImg": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/reservation-system_md7ekt.png",
+    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/reservation-system_md7ekt.png"
+  },
+  {
+    "name": "TrackWiggle",
+    "summary": "Front-End: Vue\nBack-End: Node.js & Express & MongoDB",
+    "description": "A price tracking site for the popular online sport shop Wiggle.com. The data is obtained daily via web-scraping, using the Cheerio library. The site has login/signup functionality, users can search or add products and can set notifications in case the price drops below a certain amount.",
+    "technologies": [
+      {
+        "name": "JavaScript",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/javascript_oo047w.svg"
+      },
+      {
+        "name": "Vue",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/vue_ovr6z9.svg"
+      },
+      {
+        "name": "Chart.js",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170007/portfolio-site/tech-icons/chartjs_jfix7p.svg"
+      },
+      {
+        "name": "Bootstrap",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170007/portfolio-site/tech-icons/bootstrap_aiogze.svg"
+      },
+      {
+        "name": "Node.js",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170002/portfolio-site/tech-icons/nodejs_dolm0a.svg"
+      },
+      {
+        "name": "Express.js",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170006/portfolio-site/tech-icons/expressjs_nb3e9d.svg"
+      },
+      {
+        "name": "MongoDB",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/mongodb_jm7jrz.svg"
+      }
+    ],
+    "created": "2020.07",
+    "slug": "track-wiggle",
+    "repoUrl": "https://github.com/kdaniel21/wiggletrack",
+    "demoUrl": "http://trackwiggle.danielkiss.me/",
+    "coverImg": "https://res.cloudinary.com/kdaniel/image/upload/v1596170042/portfolio-site/project-images/trackwiggle_up4gpp.png",
+    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170042/portfolio-site/project-images/trackwiggle_up4gpp.png"
+  }
+]

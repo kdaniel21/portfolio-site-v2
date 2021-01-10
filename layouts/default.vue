@@ -1,13 +1,13 @@
 <template>
-  <div id="app">
-    <div style="min-height: calc(100vh - 195px - 10px)">
-      <header />
+  <div id="default">
+    <the-header />
+    <div id="content">
       <transition name="component-fade" mode="out-in">
         <Nuxt />
       </transition>
     </div>
+    <the-footer />
     <cookie-consent />
-    <footer />
   </div>
 </template>
 
@@ -20,3 +20,16 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+#default {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#content {
+  padding-top: 60px;
+  flex-grow: 1;
+}
+</style>

@@ -5,7 +5,7 @@
       appear-class="load-project"
       appear-active-class="load-project-active"
     >
-      <div class="project" v-if="project">
+      <div v-if="project" class="project">
         <img
           :src="project.img"
           alt="Project image"
@@ -21,10 +21,10 @@
         <div class="actions">
           <div class="date">Created: {{ project.created }}</div>
           <div class="buttons">
-            <a :href="project.repoUrl" target="_blank" v-if="project.repoUrl">
+            <a v-if="project.repoUrl" :href="project.repoUrl" target="_blank">
               <div class="btn repo-btn">Repository</div>
             </a>
-            <a :href="project.demoUrl" target="_blank" v-if="project.demoUrl">
+            <a v-if="project.demoUrl" :href="project.demoUrl" target="_blank">
               <div class="btn">Demo</div>
             </a>
           </div>
@@ -35,27 +35,15 @@
 </template>
 
 <script>
-import axios from 'axios';
-import Techs from '../components/Techs';
-
 export default {
   name: 'ProjectDetails',
-  components: { Techs },
-  data() {
-    return {
-      project: {}
-    };
-  },
-  mounted() {
-    const { slug } = this.$route.params;
+  async asyncData({ $content, params }) {
+    const { slug } = params
+    const project = await $content('projects').where({ slug }).fetch()
 
-    this.$Progress.start();
-    axios.get(`${process.env.VUE_APP_API_URL}/projects/${slug}`).then(res => {
-      this.$Progress.finish();
-      this.project = res.data.project;
-    });
-  }
-};
+    return { project: project[0] }
+  },
+}
 </script>
 
 <style scoped>

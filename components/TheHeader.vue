@@ -4,23 +4,17 @@
     <div id="wrapper" @click="onNavbarClose">
       <nav>
         <!-- NAME ON THE LEFT -->
-        <router-link to="/" id="logo">
+        <nuxt-link id="logo" to="/">
           <span id="firstname">Daniel</span>
           <span id="lastname">Kiss</span>
-        </router-link>
+        </nuxt-link>
         <!-- NAVIGATION BUTTONS -->
         <ul>
-          <router-link
-            v-for="menu in menus"
-            :to="'/' + menu.url"
-            :key="menu.name"
-          >
-            <li>
-              {{ menu.name }}
-            </li>
-          </router-link>
+          <nuxt-link v-for="{ name, url } in menus" :key="name" :to="'/' + url">
+            <li>{{ name }}</li>
+          </nuxt-link>
           <!-- RESUME DOWNLOAD ICON AND BUTTON IN MOBILE VIEW -->
-          <!-- <router-link to="/resume">
+          <!-- <nuxt-link to="/resume">
             <img
               src="https://res.cloudinary.com/kdaniel/image/upload/v1596171231/portfolio-site/other-icons/resume_ypkhne.svg"
               alt="Resume icon"
@@ -28,7 +22,7 @@
               class="resume-icon"
             />
             <li class="resume-btn">Download Resume</li>
-          </router-link> -->
+          </nuxt-link> -->
         </ul>
         <!-- MOBILE RESPONSIVE HAMBURGER ICON -->
         <div id="hamburger-icon" @click="onNavbarOpen">
@@ -54,39 +48,39 @@ export default {
       menus: [
         {
           name: 'Get To Know Me',
-          url: 'about'
+          url: 'about',
         },
         {
           name: 'Projects',
-          url: 'projects'
+          url: 'projects',
         },
         {
           name: 'Get In Touch',
-          url: 'contact'
-        }
-      ]
-    };
+          url: 'contact',
+        },
+      ],
+    }
   },
   methods: {
     onNavbarOpen: () => {
-      const wrapperEl = document.querySelector('#wrapper');
-      wrapperEl.className = wrapperEl.className === 'active' ? '' : 'active';
+      const wrapperEl = document.querySelector('#wrapper')
+      wrapperEl.className = wrapperEl.className === 'active' ? '' : 'active'
 
-      const ulEl = document.querySelector('ul');
-      ulEl.className = ulEl.className === 'active' ? '' : 'active';
+      const ulEl = document.querySelector('ul')
+      ulEl.className = ulEl.className === 'active' ? '' : 'active'
     },
-    onNavbarClose: e => {
-      if (e.target.parentElement.parentElement.id === 'hamburger-icon') return;
+    onNavbarClose: (e) => {
+      if (e.target.parentElement.parentElement.id === 'hamburger-icon') return
 
-      const wrapperEl = document.querySelector('#wrapper');
-      const ulEl = document.querySelector('ul');
+      const wrapperEl = document.querySelector('#wrapper')
+      const ulEl = document.querySelector('ul')
       if (wrapperEl.className === 'active') {
-        wrapperEl.className = '';
-        ulEl.className = '';
+        wrapperEl.className = ''
+        ulEl.className = ''
       }
-    }
-  }
-};
+    },
+  },
+}
 </script>
 
 <style>
@@ -177,7 +171,7 @@ a:hover li {
   border: 1px solid #24b9ff;
 }
 
-a.router-link-active li {
+a.nuxt-link-active li {
   text-decoration: underline;
 }
 

@@ -12,14 +12,16 @@
 
 <script>
 export default {
-  name: 'Footer'
-};
+  name: 'Footer',
+}
 </script>
 <style scoped>
 #footer {
   font-family: Montserrat;
   font-size: clamp(15px, 2vw, 20px);
   text-align: right;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 span {
   opacity: 0.7;
