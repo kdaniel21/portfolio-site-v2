@@ -72,12 +72,13 @@
       <!-- <a href="#" target="_blank"
         ><img src="https://res.cloudinary.com/kdaniel/image/upload/v1596171231/portfolio-site/other-icons/linkedin_gjwvxg.svg" alt="LinkedIn Logo" class="logo"
       /></a> -->
-      <a href="mailto:kissd621@gmail.com" target="_blank"
-        ><img
+      <a href="mailto:kdaniel21@protonmail.com" target="_blank">
+        <img
           src="https://res.cloudinary.com/kdaniel/image/upload/v1596171231/portfolio-site/other-icons/mail_vx7ebc.svg"
           alt="Email Logo"
           class="logo"
-      /></a>
+        />
+      </a>
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-    <span>2020 &copy; Created by Daniel Kiss using </span>
+    <span>{{ currentYear }} &copy; Created by Daniel Kiss using </span>
     <img
       src="https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/vue_ovr6z9.svg"
       alt="Vue icon"
@@ -13,6 +13,11 @@
 <script>
 export default {
   name: 'Footer',
+  data() {
+    return {
+      currentYear: new Date().getFullYear(),
+    }
+  },
 }
 </script>
 <style scoped>

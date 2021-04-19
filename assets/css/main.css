@@ -21,7 +21,6 @@ h2 {
   font-weight: normal;
 
   font-size: clamp(20px, 13vw, 55px);
-  text-transform: capitalize;
   margin-bottom: 1rem;
 }
 p {

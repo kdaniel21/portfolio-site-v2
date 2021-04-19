@@ -4,9 +4,8 @@
     <h1>Get in touch with me</h1>
     <p>
       Do you have a <span class="blue">great idea</span> or just want to say hi?
-      Fill out the contact form below or send me an email and I’ll connect with
-      you as soon as I can (I promise!). I’m looking forward get in touch with
-      you! 🙌
+      Fill out the contact form below or send me an email and I’ll get in touch
+      with you as soon as I can. 🙌
     </p>
     <!-- SUCCESS OR ERROR MESSAGE -->
     <transition
