@@ -29,7 +29,8 @@ export default {
   justify-content: space-between;
 }
 #content {
-  padding-top: 60px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   flex-grow: 1;
 }
 </style>
