@@ -1,8 +1,132 @@
 [
   {
+    "name": "Reservatio",
+    "summary": "Enhanced version of the reservation system project, with a more robust Node backend built on top of DDD principles.",
+    "description": "<p>A fresh start for the reservation system project, still, this time with more knowledge and bigger precision.</p><p>The Node API is now much more than a simple Express server with the transaction script pattern. It's built on top of domain-driven principles, such as inversion of control, SOLID, and many more. The core does not have any dependencies on external libraries, therefore it's pure JavaScript/TypeScript.</p><p>Of course, this required me to sometimes re-invent the wheel, create countless interfaces and classes, mappers to make everything as independent as possible, so that every external dependency can be swapped out in an extremely straightforward way, without \"playing Jenga with the dependencies\".</p><p>Sometimes it was tedious, yet I believe that it was a crucial lesson for me. Now I have a better understanding of how frameworks actually help us and what concerns should be addressed beforehand, why planning is so important.</p><p>The backend part of the project is fully tested with more than 250 integration tests.</p><p>Regarding the frontend, I tried to do utilize RxJS and reactive programming as much as possible without overusing it. The biggest challenge I faced was probably the complexity of forms, where I needed to handle recurring reservations as well, calculate how they'd be affected by an update, and validate them.</p><p>Even though this is the project I'm working on right now, I believe what I've built so far provides a great user experience. Currently, I'm moving the backend to NestJS to simplify it and increase my own productivity and eventually launch.</p>",
+    "technologies": [
+      {
+        "name": "TypeScript",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/typescript_japrq8.svg"
+      },
+      {
+        "name": "Angular",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170008/portfolio-site/tech-icons/angular_ut7ry9.svg"
+      },
+      {
+        "name": "RxJS",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1623652547/portfolio-site/tech-icons/Rx_Logo-512-512_fte4nc.png"
+      },
+      {
+        "name": "Taiga UI",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1623652485/portfolio-site/tech-icons/taiga_tvccou.svg"
+      },
+      {
+        "name": "GraphQL",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1618832179/portfolio-site/tech-icons/graphql_jxutab.svg"
+      },
+      {
+        "name": "Node.js",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170002/portfolio-site/tech-icons/nodejs_dolm0a.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1618832351/portfolio-site/tech-icons/Postgresql_elephant_r4wfto.svg"
+      }
+    ],
+    "created": "2021.04 -",
+    "slug": "reservatio",
+    "repoUrl": "https://github.com/kdaniel21/api.reservatio",
+    "coverImg": "https://res.cloudinary.com/kdaniel/image/upload/v1623654298/portfolio-site/project-images/reservatio_xdgjsm.png",
+    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1623654298/portfolio-site/project-images/reservatio_xdgjsm.png",
+    "isDisplayed": true
+  },
+  {
+    "name": "VO2JOG",
+    "summary": "Local endurance event finder, built with Nuxt.",
+    "description": "Endurance event finder using NuxtJS (Vue) - an earlier side-project. Currently abandoned, yet it has helped me love the entire Vue.js ecosystem. I started refactoring its backend API to something more complex, yet I've never finished it. That's when I discovered domain-driven design and started learning it at the expense of this project.",
+    "technologies": [
+      {
+        "name": "JavaScript",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/javascript_oo047w.svg"
+      },
+      {
+        "name": "Vue",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/vue_ovr6z9.svg"
+      },
+      {
+        "name": "Nuxt",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1623652988/portfolio-site/tech-icons/nuxt_lpljng.svg"
+      },
+      {
+        "name": "Bulma",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1623653069/portfolio-site/tech-icons/logos-bulma_ef7qnn.svg"
+      },
+      {
+        "name": "Express.js",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170006/portfolio-site/tech-icons/expressjs_nb3e9d.svg"
+      },
+      {
+        "name": "MongoDB",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/mongodb_jm7jrz.svg"
+      }
+    ],
+    "created": "2020.11 - 2021.02",
+    "slug": "vo2jog",
+    "repoUrl": "https://github.com/kdaniel21/vo2jog",
+    "coverImg": "https://res.cloudinary.com/kdaniel/image/upload/v1623653875/portfolio-site/project-images/vo2jog_tvuqog.png",
+    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1623653875/portfolio-site/project-images/vo2jog_tvuqog.png",
+    "isDisplayed": true
+  },
+  {
+    "name": "Soclaborative",
+    "summary": "Real-time chrome extension built with Angular and GraphQL subscriptions.",
+    "description": "<p>Tiny Chrome extension for solving a real-world problem I was facing, real-time collaboration on education platform Socrative. Utilizes Angular and GraphQL subscriptions, along with a very simple frontend (Node, and Redis).</p>",
+    "technologies": [
+      {
+        "name": "TypeScript",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170003/portfolio-site/tech-icons/typescript_japrq8.svg"
+      },
+      {
+        "name": "Angular",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170008/portfolio-site/tech-icons/angular_ut7ry9.svg"
+      },
+      {
+        "name": "RxJS",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1623652547/portfolio-site/tech-icons/Rx_Logo-512-512_fte4nc.png"
+      },
+      {
+        "name": "Taiga UI",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1623652485/portfolio-site/tech-icons/taiga_tvccou.svg"
+      },
+      {
+        "name": "GraphQL",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1618832179/portfolio-site/tech-icons/graphql_jxutab.svg"
+      },
+      {
+        "name": "Node.js",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170002/portfolio-site/tech-icons/nodejs_dolm0a.svg"
+      },
+      {
+        "name": "Redis",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1623652825/portfolio-site/tech-icons/redis-logo-svg-vector_kpnrbs.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "img": "https://res.cloudinary.com/kdaniel/image/upload/v1618832351/portfolio-site/tech-icons/Postgresql_elephant_r4wfto.svg"
+      }
+    ],
+    "created": "2021.04",
+    "slug": "soclaborative",
+    "repoUrl": "https://github.com/kdaniel21/soclaborative",
+    "demoUrl": "https://chrome.google.com/webstore/detail/soclaborative/hohompdlfjhigkepglejpolbglnnfflp",
+    "coverImg": "https://lh3.googleusercontent.com/MOtAV46NMvVOJclFyIOyOptF0joBtepYpWtMFwysIGJsfc4WR5yGPdyFBCrCMbz0z3KYgAMFsSGsTJf_xp_mxYSwWw=w640-h400-e365-rj-sc0x00ffffff",
+    "img": "https://lh3.googleusercontent.com/MOtAV46NMvVOJclFyIOyOptF0joBtepYpWtMFwysIGJsfc4WR5yGPdyFBCrCMbz0z3KYgAMFsSGsTJf_xp_mxYSwWw=w640-h400-e365-rj-sc0x00ffffff",
+    "isDisplayed": true
+  },
+  {
     "name": "Reservation System (Firebase)",
     "summary": "Front-End: Angular\nBack-End: Firebase",
-    "description": "The first version of the Reservation System. It was built on top of Google Firebase, using the AngularFire library and the Realtime DB REST API. User groups (admins and normal users), admin dashboard, blog posts, contact form with on-site message sending functionality and the reservation system handling recurring and normal reservations and multiple places are included.\nCredentials for the demo: admin@test.com (admin account) or test@test.com (normal user) both having the password \"test1234\".",
+    "description": "<p>The first version of the Reservation System. It was built on top of Google Firebase, using the AngularFire library and the Realtime DB REST API. User groups (admins and normal users), admin dashboard, blog posts, contact form with on-site message sending functionality and the reservation system handling recurring and normal reservations and multiple places are included.</p>\n<p>Credentials for the demo: admin@test.com (admin account) or test@test.com (normal user) both having the password \"test1234\".</p>",
     "technologies": [
       {
         "name": "Angular",
@@ -38,7 +162,8 @@
     "repoUrl": "https://github.com/kdaniel21/reservation-system-firebase",
     "demoUrl": "https://reservation-system-81981.web.app",
     "coverImg": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/reservation-system-firebase_hxpcg5.png",
-    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/reservation-system-firebase_hxpcg5.png"
+    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/reservation-system-firebase_hxpcg5.png",
+    "isDisplayed": false
   },
   {
     "name": "Portfolio Site",
@@ -75,7 +200,8 @@
     "repoUrl": "https://github.com/kdaniel21/portfolio-site-v1",
     "demoUrl": "https://danielkiss.me",
     "coverImg": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/portfolio-site_ypnb1f.png",
-    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/portfolio-site_ypnb1f.png"
+    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/portfolio-site_ypnb1f.png",
+    "isDisplayed": true
   },
   {
     "createdAt": "2020-07-27T08:26:43.806Z",
@@ -111,9 +237,9 @@
     "created": "2020.07",
     "slug": "reservation-system",
     "repoUrl": "https://github.com/kdaniel21/reservation-system",
-    "demoUrl": "https://reservation-system.netlify.app/",
     "coverImg": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/reservation-system_md7ekt.png",
-    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/reservation-system_md7ekt.png"
+    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170041/portfolio-site/project-images/reservation-system_md7ekt.png",
+    "isDisplayed": true
   },
   {
     "name": "TrackWiggle",
@@ -154,6 +280,7 @@
     "repoUrl": "https://github.com/kdaniel21/wiggletrack",
     "demoUrl": "http://trackwiggle.danielkiss.me/",
     "coverImg": "https://res.cloudinary.com/kdaniel/image/upload/v1596170042/portfolio-site/project-images/trackwiggle_up4gpp.png",
-    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170042/portfolio-site/project-images/trackwiggle_up4gpp.png"
+    "img": "https://res.cloudinary.com/kdaniel/image/upload/v1596170042/portfolio-site/project-images/trackwiggle_up4gpp.png",
+    "isDisplayed": true
   }
 ]

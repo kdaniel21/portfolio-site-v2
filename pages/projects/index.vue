@@ -48,7 +48,9 @@
 export default {
   name: 'Projects',
   async asyncData({ $content }) {
-    const projects = await $content('projects').fetch()
+    const projects = await $content('projects')
+      .where({ isDisplayed: true })
+      .fetch()
 
     return { projects }
   },
@@ -96,7 +98,7 @@ h3.card-title {
 }
 p.card-description {
   font-size: 20px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-family: Arvo;
   margin-top: 5px;
   margin-bottom: 0;

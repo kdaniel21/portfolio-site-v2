@@ -13,9 +13,8 @@
           class="project-image"
         />
         <h2>{{ project.name }}</h2>
-        <p class="project-description">
-          {{ project.description }}
-        </p>
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <p class="project-description" v-html="project.description"></p>
         <h2>Technologies Used</h2>
         <techs :techs="project.technologies"></techs>
         <div class="actions">
